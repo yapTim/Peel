@@ -1,12 +1,15 @@
 {
     "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "outDir": "dist",
-        "sourceMap": true,
+        "target": "esnext",
+        "module": "esnext",
+        "baseUrl": "./",
         "alwaysStrict": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "noEmit": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "importsNotUsedAsValues": "error"
     },
-    "include": ["src/**/*"],
+    "include": ["src/**/*", "types"],
     "exclude": ["node_modules"]
 }
