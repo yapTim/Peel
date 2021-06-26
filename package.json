@@ -19,9 +19,13 @@
     "@typescript-eslint/parser": "^4.28.0",
     "eslint": "^7.29.0",
     "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "typescript": "^4.3.4"
   },
   "lint-staged": {
     "*.ts": "eslint"
+  },
+  "dependencies": {
+    "firebase": "^9.0.0-beta.2"
   }
 }
