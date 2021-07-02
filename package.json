@@ -29,6 +29,8 @@
     "*.ts": "eslint"
   },
   "dependencies": {
+    "@types/bootstrap": "^5.0.16",
+    "bootstrap": "^5.0.2",
     "firebase": "^9.0.0-beta.2"
   }
 }

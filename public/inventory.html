@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Peel</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link href="dist/index.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="dist/index.css">
+
   <!--Google Font Link -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -21,38 +23,83 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar w/ text</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="">Peel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav mr-auto">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="inventory.html">Inventory</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="purchases.html">Purchases</a>
         </li>
       </ul>
-      <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
     </div>
   </nav>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  <section class="peel-invBody">
+    <div class="container-fluid my-3 shadow peel-invTable">
+      <div class="row align-middle my-2 px-2">
+        <div class="col">
+          <h2>Inventory</h2>
+        </div>
+        <div class="col">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle float-end m-1" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Filter
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">All</a></li>
+              <li><a class="dropdown-item" href="#">Branch A</a></li>
+              <li><a class="dropdown-item" href="#">Branch B</a></li>
+            </ul>
+          </div>
+          <button class="btn btn-primary float-end m-1">Branch Setup</button>
+        </div>
+      </div>
+
+      <div class="row align-middle mx-2 peel-invHead">
+        <div class="col-1 peel-invHeadItem">Date</div>
+        <div class="col-6 peel-invHeadItem">Name</div>
+        <div class="col-1 peel-invHeadItem">Quantity</div>
+        <div class="col-1 peel-invHeadItem">Unit</div>
+        <div class="col-1 peel-invHeadItem">Price/U</div>
+        <div class="col-1 peel-invHeadItem">Total</div>
+        <div class="col-1 peel-invHeadItem">Branch</div>
+      </div>
+      <div id="invContent">
+        <div class="row align-middle mx-2 peel-invEntry">
+          <div class="col-1 peel-invEntryItem">1-1-21</div>
+          <div class="col-6 peel-invEntryItem">Flour</div>
+          <div class="col-1 peel-invEntryItem">100</div>
+          <div class="col-1 peel-invEntryItem">kg</div>
+          <div class="col-1 peel-invEntryItem">5</div>
+          <div class="col-1 peel-invEntryItem">500php</div>
+          <div class="col-1 peel-invEntryItem">Branch</div>
+        </div>
+      </div>
+
+      <div class="row align-middle mx-2 mt-3 mb-3 peel-invFoot">
+        <div class="col-1 peel-invFootItem">Footer</div>
+        <div class="col-6 peel-invFootItem">Footer</div>
+        <div class="col-1 peel-invFootItem">Footer</div>
+        <div class="col-1 peel-invFootItem">Footer</div>
+        <div class="col-1 peel-invFootItem">Footer</div>
+        <div class="col-1 peel-invFootItem">Footer</div>
+        <div class="col-1 peel-invFootItem">Footer</div>
+      </div>
+
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+  <!-- <script type="module" src="/node_modules/bootstrap/dist/js/bootstrap.js"></script> -->
   <script type="module" src="dist/initFirebase.js"></script>
   <script type="module" src="dist/inventory.js"></script>
 </body>

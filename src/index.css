@@ -1,12 +1,12 @@
 body {
     font-family: 'Poppins', sans-serif;
+    color: black;
     background : #8E9AAF;
     max-width  : 100%;
     min-height : 100vh;
-    padding    : 0em 1.5em 1.5em 1.5em;
 }
 
-/* Login Box Styling (Not finalized) */
+/* Login Box Styling */
 #loginHeader {
     font-size  : 2.5em;
     font-weight: 700;
@@ -16,18 +16,72 @@ body {
 }
 
 #loginBox {
-    color           : black;
+    color           : whitesmoke;
     font-weight     : 500;
     border          : 3px solid black;
     border-radius   : 20px;
     max-width       : 500px;
     padding         : 3em;
-    background-color: #CBC0D3;
+    background-color: #212529;
 
 }
 
 #loginBtn {
-    background-color: #DEE2FF;
-    color: black;
+    background-color: #8f8f8f;
+    font-weight: 600;
+    color: white;
     /* border: 1px solid black; */
+}
+
+#loginPopup {
+    color: black;
+}
+
+.peel-invBody {
+    padding: 0em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.peel-invTable {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.peel-invHead {
+    text-align: center;
+    font-weight: bold;
+}
+
+.peel-invHeadItem {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.peel-invHeadItem:first-child {
+    border-left: 1px solid black;
+}
+
+.peel-invEntryItem {
+    border-top: 0px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.peel-invEntryItem:first-child {
+    border-left: 1px solid black;
+}
+
+.peel-invFootItem {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.peel-invFootItem:first-child {
+    border-left: 1px solid black;
 }
