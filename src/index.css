@@ -37,6 +37,8 @@ body {
     color: black;
 }
 
+/* INVENTORY CSS */
+
 .peel-invBody {
     padding: 0em 4em;
     display: flex;
@@ -69,7 +71,15 @@ body {
     border-top: 0px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
 }
+
+.peel-invEntryItem:nth-child(2) {
+    text-align: left;
+}
+
 
 .peel-invEntryItem:first-child {
     border-left: 1px solid black;
@@ -84,4 +94,95 @@ body {
 
 .peel-invFootItem:first-child {
     border-left: 1px solid black;
+}
+
+.peel-invEdit:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.peel-invDelete:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: red;
+    cursor: pointer;
+}
+
+/* PURCHASES CSS */
+
+.peel-purchBody {
+    padding: 0em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.peel-purchTable {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.peel-purchHead {
+    text-align: center;
+    font-weight: bold;
+}
+
+.peel-purchHeadItem {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.peel-purchHeadItem:first-child {
+    border-left: 1px solid black;
+}
+
+.peel-purchEntryItem {
+    border-top: 0px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.peel-purchEntryItem:nth-child(2) {
+    text-align: left;
+}
+
+
+.peel-purchEntryItem:first-child {
+    border-left: 1px solid black;
+}
+
+.peel-purchFootItem {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.peel-purchFootItem:first-child {
+    border-left: 1px solid black;
+}
+
+#peel-addEntryBtn {
+    transition: all 0.5s ease-in-out;
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+#peel-addEntryBtn:hover {
+    transition: all 0.5s ease-in-out;
+    width: 90px;
+    height: 90px;
+    padding: 10px 16px;
+    border-radius: 55px;
+    font-size: 24px;
+    line-height: 1.33;
 }
